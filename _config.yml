@@ -18,9 +18,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-description: >- # this means to ignore newlines until "baseurl:"
-  Odin is a simple to setup and use Jekyll theme for help desks and knowledge bases. Hosts for free on Github Pages!
+title: Oding - A Jekyll Knowledge Base Theme
+description: Odin is a simple to setup and use Jekyll theme for help desks and knowledge bases. Hosts for free on Github Pages!
 baseurl: /odin # the subpath of your site, e.g. /blog
 url: teaguns.github.io # the base hostname & protocol for your site, e.g. http://example.com
 permalink: /:categories/:title
