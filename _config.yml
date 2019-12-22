@@ -20,9 +20,7 @@
 
 title: Your awesome title
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Odin is a simple to setup and use Jekyll theme for help desks and knowledge bases. Hosts for free on Github Pages!
 baseurl: /odin # the subpath of your site, e.g. /blog
 url: teaguns.github.io # the base hostname & protocol for your site, e.g. http://example.com
 permalink: /:categories/:title
@@ -40,6 +38,8 @@ instagram_username:
 
 brand_logo: odin-logo.png
 brand_name: Odin
+header: How can we help you?
+subheader: Support and documentation for Odin
 
 # Navivation
 nav_item_one: Github
@@ -60,7 +60,7 @@ help_one_link: https://github.com/TeaGuns/odin/issues
 help_two_title: Twitter
 help_two_content: Feel free to tweet at me if you have suggestions for Odin. Or if you just want to say hi.
 help_two_button: Twitter
-help_two_link: https://comm.chat/
+help_two_link: https://twitter.com/theteaguns
 
 # Build settings
 theme: minima

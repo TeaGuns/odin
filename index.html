@@ -28,14 +28,7 @@ title: Home
               </div>
             </a>
           </div>
-          {% endfor %}
-          
-
-        {% for post in site.posts %}
-          {% if post.path contains 'Category Name' %}
-          <h5 class="text-semibold m-0">{{ post.title }}</h5>
-          {% endif %}
-        {% endfor %}  
+          {% endfor %} 
 
           {% include more-help.html %}
         </div>
