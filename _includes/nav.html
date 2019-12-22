@@ -1,14 +1,19 @@
 <nav class="container grid-xl navbar">
-  <span class="navbar-toggle" id="js-navbar-toggle">
-    <i class="fas fa-bars"></i>
-  </span>
-  <div class="flex-vertical-center">
+  <div class="flex-vertical-center hide-sm">
     <a style="width: 20%;" href="https://{{ site.url }}{{ site.baseurl }}" class="logo">
       <img style="max-width: 100%;" src="{{ site.baseurl }}/assets/{{ site.brand_logo }}"/>
     </a>
     <p class="m-0 ml-2 text-light d-inline">{{ site.content_type }}</p>
   </div>
-  <ul class="main-nav" id="js-menu">
+  <div class="text-center show-sm">
+    <a style="width: 100%;" href="https://{{ site.url }}{{ site.baseurl }}" class="logo flex-centered">
+      <img style="max-width: 150px;" src="{{ site.baseurl }}/assets/{{ site.brand_logo }}"/>
+    </a>
+    <p class="m-0 text-light">{{ site.content_type }}</p>
+    <a style="height: auto;" class="btn btn-lg btn-outline py-2 mt-4">Return to {{ site.brand_name }} Home</a>
+
+  </div>
+  <ul class="main-nav">
     {% if site.nav_item_one == null %}
     {% else %}
     <li class="mx-4">
