@@ -27,6 +27,11 @@ permalink: /:categories/:title
 content_type: Knowledge Base #Define whether this is a knowledge base, help center, or something else
 use_authors: true #Set this to false to disable showing post authors
 
+brand_logo: logo.png
+brand_name: Odin
+header: How can we help you?
+subheader: Support and documentation for Odin
+
 # Social Links
 twitter_username: TheTeaGuns
 facebook_page:
@@ -35,10 +40,6 @@ email: m@credd.in
 linkedin_page:
 instagram_username: 
 
-brand_logo: odin-logo.png
-brand_name: Odin
-header: How can we help you?
-subheader: Support and documentation for Odin
 
 # Navivation
 nav_item_one: Github
@@ -49,6 +50,9 @@ nav_item_two_link: https://twitter.com/TheTeaGuns
 
 nav_item_three: #
 nav_item_three_link: #
+
+nav_button: Return to Odin Home
+nav_button_link: https://teaguns.github.io/odin/
 
 # More Help
 help_one_title: Odin Bugs

@@ -38,7 +38,7 @@ layout: default
                   </figure>
                   <div class="ml-2">
                     <p class="text-dark text-small mb-0">Written by <span class="text-primary">{{ post_author.name }}</span></p>
-                    <p class="text-dark text-small text-italic mb-0">{{ page.last_modified_at | date: '%B %d, %Y'  }} - {% include reading-time.html %}</p>
+                    <p class="text-dark text-small text-italic mb-0">{% include reading-time.html %}</p>
                   </div>
                 </div>
                 {% else %}

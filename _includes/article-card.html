@@ -16,14 +16,9 @@
               </figure>
               <div class="ml-2">
                 <p class="text-dark text-small mb-0">Written by <span class="text-primary">{{ post_author.name }}</span></p>
-                <p class="text-dark text-small text-italic mb-0">{{ page.last_modified_at | date: '%B %d, %Y'  }}</p>
               </div>
             </div>
             {% else %}
-            <div class="ml-2">
-                <p class="m-0 text-small">Last updated:</p>
-                <p class="text-dark text-small text-italic mb-0">{{ page.last_modified_at | date: '%B %d, %Y'  }}</p>
-              </div>
             {% endif %}
            
           </div>
