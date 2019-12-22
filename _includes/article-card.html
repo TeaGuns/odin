@@ -12,7 +12,7 @@
             {% assign post_author = site.data.authors[post.author] %}
             <div class="flex-vertical-center">
               <figure class="avatar d-inline-block" style="align-items: center;">
-                <img  src="../assets/{{ post_author.image}}" alt="...">
+                <img  src="{{ site.baseurl }}/assets/{{ post_author.image}}" alt="...">
               </figure>
               <div class="ml-2">
                 <p class="text-dark text-small mb-0">Written by <span class="text-primary">{{ post_author.name }}</span></p>
