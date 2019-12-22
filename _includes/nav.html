@@ -1,0 +1,34 @@
+<nav class="container grid-xl navbar">
+  <span class="navbar-toggle" id="js-navbar-toggle">
+    <i class="fas fa-bars"></i>
+  </span>
+  <div class="flex-vertical-center">
+    <a style="width: 20%;" href="{{ site.url }}" class="logo">
+      <img style="max-width: 100%;" src="../assets/{{ site.brand_logo }}"/>
+    </a>
+    <p class="m-0 ml-2 text-light d-inline">{{ site.content_type }}</p>
+  </div>
+  <ul class="main-nav" id="js-menu">
+    {% if site.nav_item_one == null %}
+    {% else %}
+    <li class="mx-4">
+      <a  class="nav-links" href="{{ site.nav_item_one_link }}">{{ site.nav_item_one }}</a>
+    </li>
+    {% endif %}
+    {% if site.nav_item_two == null %}
+    {% else %}
+    <li class="mx-4">
+      <a  class="nav-links" href="{{ site.nav_item_two_link }}">{{ site.nav_item_two }}</a>
+    </li>
+    {% endif %}
+    {% if site.nav_item_three == null %}
+    {% else %}
+    <li class="mx-4">
+      <a  class="nav-links" href="{{ site.nav_item_three_link }}">{{ site.nav_item_three }}</a>
+    </li>
+    {% endif %}
+    <li>
+      <a style="height: auto;" class="btn btn-lg btn-outline py-2">Return to {{ site.brand_name }} Home</a>
+    </li>
+  </ul>
+</nav>

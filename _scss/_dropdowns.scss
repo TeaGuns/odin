@@ -1,0 +1,65 @@
+// Dropdown
+.dropdown {
+  display: inline-block;
+  position: relative;
+  .dropdown-toggle {
+    color: $dark-color;
+    border-bottom: 2px solid transparent;
+    font-weight: 700;
+    &.dropdown-link {
+      color: $white;
+      border-bottom: none;
+      &:hover {
+        border-bottom: none;
+        color: $error;
+      }
+    }
+  }
+
+  .menu {
+    animation: slide-down .15s ease 1;
+    display: none;
+    margin-top: -5px;
+    left: 0;
+    max-height: 50vh;
+    overflow-y: auto;
+    position: absolute;
+    top: 100%;
+    li {
+      margin: 0;
+    }
+    a {
+      border: none;
+    }
+    a:hover {
+      border: none;
+    }
+  }
+
+  &.dropdown-right {
+    .menu {
+      left: auto;
+      right: 0;
+    }
+  }
+
+  &.active .menu,
+  .dropdown-toggle:focus + .menu,
+  .menu:hover {
+    display: block;
+  }
+
+  &.active .menu,
+  .dropdown-toggle:hover + .menu,
+  .menu:hover {
+    display: block;
+  }
+
+  // Fix dropdown-toggle border radius in button groups
+  .btn-group {
+    .dropdown-toggle:nth-last-child(2) {
+      border-bottom-right-radius: $border-radius;
+      border-top-right-radius: $border-radius;
+    }
+  }
+}

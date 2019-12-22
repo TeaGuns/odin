@@ -1,0 +1,22 @@
+<div class="column col-12">
+  <a href="{{ post.url }}">
+    <div class="card card-link my-1" itemprop="blogPosts" itemscope="" itemtype="http://schema.org/BlogPosting">
+      <div class="card-body">
+        <div class="columns col-x-align">
+          <div class="column col col-sm-12">
+            <h5 class="text-semibold m-0">{{ post.title }}</h5>
+            <p class="m-0 text-dark">{{ post.short-description }}</p>
+          </div>
+          <div class="column col-auto hide-sm">
+            <div class="ml-2">
+              <p class="m-0 text-small">Last updated:</p>
+              <p class="text-dark text-small text-italic mb-0">{{ page.last_modified_at | date: '%B %d, %Y'  }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+

@@ -1,0 +1,83 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you: 
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: Your awesome title
+description: >- # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+permalink: /:categories/:title
+
+content_type: Knowledge Base #Define whether this is a knowledge base, help center, or something else
+use_authors: true #Set this to false to disable showing post authors
+
+# Social Links
+twitter_username: TheTeaGuns
+facebook_page:
+github_username: TeaGuns
+email: m@credd.in
+linkedin_page:
+instagram_username: 
+
+brand_logo: odin-logo.png
+brand_name: Odin
+
+# Navivation
+nav_item_one: Github
+nav_item_one_link: https://github.com/TeaGuns
+
+nav_item_two: Twitter
+nav_item_two_link: https://twitter.com/TheTeaGuns
+
+nav_item_three: #
+nav_item_three_link: #
+
+# More Help
+help_one_title: Odin Bugs
+help_one_content: If you find any bugs or problems with this theme, please open an issue over on Github.
+help_one_button: Github
+help_one_link: https://github.com/TeaGuns/odin/issues
+
+help_two_title: Twitter
+help_two_content: Feel free to tweet at me if you have suggestions for Odin. Or if you just want to say hi.
+help_two_button: Twitter
+help_two_link: https://comm.chat/
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-last-modified-at
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+
+
+sass:
+  sass_dir:          _scss
+  style:            :compressed

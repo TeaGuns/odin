@@ -1,0 +1,19 @@
+{% if site.help_one_title == null %}
+{% else %}
+<div class="column col-12 text-center mt-16">
+  <h4>Still Need Help?</h4>
+</div>
+<div class="column col-4 col-sm-12 p-8 mb-8 col-mx-auto">
+  <h5>{{ site.help_one_title }}</h5>
+  <p>{{ site.help_one_content }}</p>
+  <a href="{{ site.help_one_link }}">{{ site.help_one_button }} <i class="far fa-long-arrow-right arrow-hover"></i></a>
+</div>
+{% endif %}
+{% if site.help_two_title == null %}
+{% else %}
+<div class="column col-4 col-sm-12 p-8 mb-8 col-mx-auto">
+  <h5>{{ site.help_two_title }}</h5>
+  <p>{{ site.help_two_content }}</p>
+  <a href="{{ site.help_two_link }}" target="_blank">{{ site.help_two_button}} <i class="far fa-long-arrow-right arrow-hover"></i></a>
+</div>
+{% endif %}

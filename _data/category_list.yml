@@ -1,0 +1,12 @@
+#This file defines all the categories you 
+
+getting-started: 
+  name: Getting Started
+  title: Getting Started
+  description: Welcome to Odin, time to get started
+using-odin: 
+  name: Using Odin
+  description: Welcome to Odin, time to get started
+customizing-odin: 
+  name: Customizing Odin
+  description: Welcome to Odin, time to get started

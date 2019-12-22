@@ -1,0 +1,71 @@
+---
+layout: default
+---
+
+{% include header.html %}
+
+{% assign page_category = site.data.category_list[page.category] %}
+
+
+<div class="container-full">
+    <div class="container grid-xl">
+      <div class="mt-12 show-md"></div>
+      <div class="mt-8"></div>
+      <div class="columns negative-m-xl">
+        <div class="column col-12">
+          <ul class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="{{ site.baseurl }}">Help Center Home</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="../{{ page.category }}">{{ page_category.name }}</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="#">{{ page.title }}</a>
+            </li>
+          </ul>
+          <h2 class="text-light text-bold">{{ page.title }}</h2>
+          <p class="text-light mb-0">{{ page.short-description }}</p>
+        </div>
+        <div class="column col-12">
+          <div class="card">
+            <div class="card-body">
+              {% if post.author == mac %}
+
+              <div class="mb-4 flex-vertical-center">
+                <div>
+                  <p class="text-dark text-small text-italic mb-0" title="Estimated read time">
+                    {{ page.last_modified_at | date: '%B %d, %Y'  }} - {% include reading-time.html %}
+                  </p>
+                </div>
+              </div>
+                
+              {% else if post.author == jacob %}
+
+              <div class="mb-4 flex-vertical-center">
+                <figure class="avatar d-inline-block">
+                  <img src="../assets/jacob.png" alt="...">
+                </figure>
+                <div class="ml-2">
+                  <p class="text-dark text-small mb-0">Written by <span class="text-primary">Jacob</span></p>
+                  <p class="text-dark text-small text-italic mb-0">{{ page.date | date: '%B %d, %Y' }}</p>
+                </div>
+              </div>
+
+              {% else %}
+                
+              {% endif %}
+
+              {{ content }}
+
+              
+            
+
+
+            </div>
+          </div>
+        </div>
+        {% include more-help.html %}
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,111 @@
+
+
+.card-link {
+  color: $dark-color;
+  font-weight: 400;
+  position: relative;
+  transition: all ease 0.3s;
+  &:hover {
+    color: $highlight-color;
+    -moz-transform: translateY(-4px);
+    -ms-transform: translateY(-4px);
+    -o-transform: translateY(-4px);
+    -webkit-transform: translateY(-4px);
+    transform:  translateY(-4px);
+  }
+}
+
+.card {
+  border: 1px solid $border-color;
+  background: $white;
+  border-radius: $border-radius-lg;
+  display: flex;
+  flex-direction: column;
+  box-shadow: $light-shadow;
+  margin: 10px 0;
+  &.card-hover {
+    display: block;
+    top: 0px;
+    position: relative;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+    border: 1px solid $border-color;
+    transition: all 0.2s ease;
+    &:hover {
+      cursor: pointer;
+      box-shadow: $hover-shadow;
+      top: -4px;
+      border: 1px solid $error;
+      background-color: white;
+    }
+    &.active-notifications {
+      padding-bottom: 18px;
+      &:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: -16px;
+        right: -16px;
+        background: $error;
+        height: 32px;
+        width: 32px;
+        border-radius: 32px;
+        transform: scale(2);
+        transform-origin: 50% 50%;
+        transition: transform 0.15s ease-out;
+      }
+    }
+    
+  
+    &:hover:before {
+      transform: scale(2.15);
+    }
+  }
+  .card-header,
+  .card-body,
+  .card-footer {
+    padding: $layout-spacing-lg;
+    padding-bottom: 0;
+
+    &:last-child {
+      padding-bottom: $layout-spacing-lg;
+    }
+  }
+
+  .card-body {
+    flex: 1 1 auto;
+    &.card-body-h-center {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .card-image {
+    padding-top: $layout-spacing-lg;
+    position: relative;
+
+    &:first-child {
+      padding-top: 0;
+
+      img {
+        border-top-left-radius: $border-radius;
+        border-top-right-radius: $border-radius;
+      }
+    }
+
+    &:last-child {
+      img {
+        border-bottom-left-radius: $border-radius;
+        border-bottom-right-radius: $border-radius;
+      }
+    }
+    & .img-overlay {
+      &.top-right {
+        position: absolute;
+        top: 3px;
+        right: 6px;
+      }
+    }
+  }
+}

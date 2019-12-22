@@ -1,0 +1,30 @@
+---
+layout: default
+---
+{% include header.html %}
+
+{% assign page_category = site.data.category_list[page.category] %}
+
+<div class="container-full">
+  <div class="container grid-xl">
+    <div class="mt-12 show-md"></div>
+    <div class="mt-8"></div>
+    <div class="columns negative-m-xl">
+      <div class="column col-12">
+        <ul class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="{{ site.url }}">Help Center Home</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="#">{{ page_category.name }}</a>
+          </li>
+        </ul>
+        <h2 class="text-light text-bold">{{ page_category.name }}</h2>
+        <p class="text-light mb-2">{{ page_category.description }}</p>
+      </div>
+      {{ content }}
+      {% include more-help.html %}
+    </div>
+  </div>
+</div>
+

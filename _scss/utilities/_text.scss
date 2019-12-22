@@ -1,0 +1,123 @@
+// Text
+// Text alignment utilities
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+// Text transform utilities
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+// Text style utilities
+.text-normal {
+  font-weight: normal;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-superbold {
+  font-weight: 900;
+}
+
+.text-semibold {
+  font-weight: 600;
+}
+
+.text-italic {
+  font-style: italic;
+}
+
+.text-large {
+  font-size: 1.2em;
+}
+
+.text-xl {
+  font-size: 2em;
+}
+
+.text-small {
+  font-size: 0.8em;
+}
+
+// Text overflow utilities
+.text-ellipsis {
+  @include text-ellipsis();
+}
+
+.text-clip {
+  overflow: hidden;
+  text-overflow: clip;
+  white-space: nowrap;
+}
+
+.text-break {
+  hyphens: auto;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+
+.light-link {
+  color: $white;
+  transition: all ease 0.3s;
+  opacity: 1;
+  &:hover {
+    color: $error;
+  }
+}
+
+.text-red {
+  color: $error;
+}
+
+.text-no-my {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.link-nu {
+  color: $error;
+  border-bottom: none;
+  &:hover {
+    border-bottom: none;
+  }
+}
+
+.p-lg {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 1.25em;
+  margin-top: 1.25em;
+  opacity: 1;
+}
+
+
+.arrow-hover {
+  transition: transform 0.3s ease-in;
+}
+
+a:hover .arrow-hover {
+  transform: translateX(10px);
+}
