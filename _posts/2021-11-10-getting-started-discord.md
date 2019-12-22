@@ -2,8 +2,7 @@
 layout: post
 title: "Getting Started with Commsor for Discord"
 date: 2019-11-05 08:44:38 -0400
-category: [Customizing Odin]
-category-name: "Getting Started"
+category: customizing-odin
 author: mac
 short-description: Get started using Commsor for your Discord community
 ---
