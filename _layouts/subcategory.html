@@ -1,0 +1,35 @@
+---
+layout: default
+---
+{% include header.html %}
+
+{% assign page_category = site.data.category_list[page.category] %}
+
+{% assign page_subcategory = site.data.subcategory_list[page.subcategory] %}
+
+<div class="container-full">
+  <div class="container grid-xl">
+    <div class="mt-12 show-md"></div>
+    <div class="mt-8"></div>
+    <div class="columns negative-m-xl">
+      <div class="column col-12">
+        <ul class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="https://{{ site.url }}{{ site.baseurl }}">Help Center Home</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="https://{{ site.url }}{{ site.baseurl }}/{{ page_subcategory.parent-category | slugify }}">{{ page_subcategory.parent-category-name }}</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="#">{{ page_subcategory.name }}</a>
+          </li>
+        </ul>
+        <h2 class="text-light text-bold">{{ page_subcategory.name }}</h2>
+        <p class="text-light mb-2">{{ page_subcategory.description }}</p>
+      </div>
+      {% for post in site.categories.[page.subcategory] %}
+        {% include article-card.html %}
+      {% endfor %}
+      {% include more-help.html %}
+    </div>
+  </div>

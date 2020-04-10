@@ -2,6 +2,7 @@
 layout: default
 title: Home
 ---
+{% assign page_category = site.data.category_list[page.category] %}
 
   {% include header-home.html %}
     <div class="container-full">
@@ -10,7 +11,7 @@ title: Home
           <div class="column col-12 text-center">
             <h6 class="text-secondary">Select a Category</h6>
           </div>
-          {% for category in site.categories %}
+          {% for category in site.data.category_list %}
           {% capture category_name %}{{ category | first }}{% endcapture %}
           {% assign page_category = site.data.category_list[category_name] %}
           <div class="column col-4 col-md-6 col-sm-12">

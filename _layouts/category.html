@@ -5,6 +5,8 @@ layout: default
 
 {% assign page_category = site.data.category_list[page.category] %}
 
+{% assign page_subcategory = site.data.subcategory_list[page.subcategory] %}
+
 <div class="container-full">
   <div class="container grid-xl">
     <div class="mt-12 show-md"></div>
@@ -22,9 +24,41 @@ layout: default
         <h2 class="text-light text-bold">{{ page_category.name }}</h2>
         <p class="text-light mb-2">{{ page_category.description }}</p>
       </div>
-      {{ content }}
+      {% if page.has-subcategories == true %}
+        {% for subcategory in site.data.subcategory_list %}
+        {% capture subcategory_name %}{{ subcategory | first }}{% endcapture %}
+        {% assign page_subcategory = site.data.subcategory_list[subcategory_name] %}
+          {% if page_subcategory.parent-category == page.category %}
+          <div class="column col-4 col-md-6 col-sm-12">
+            <a href="{{ site.baseurl }}/{{ subcategory_name }}">
+              <div class="card card-link">
+                <div class="card-body text-center my-4">
+                  <h5 class="text-bold">{{ page_subcategory.name }}</h5>
+                      
+                  {% if subcategory[1].size == 1 %}
+                  <p class="m-0">{{ category | last | size }} article</p>
+                  {% else %}
+                  <p class="m-0">{{ category | last | size }} articles</p>
+                  {% endif %}
+                </div>
+              </div>
+            </a>
+          </div>
+          {% endif %}
+        {% endfor %} 
+      {% else %}
+        {% for post in site.categories.[page.category] %}
+          {% include article-card.html %}
+        {% endfor %}
+      {% endif %}
+
+
+
+
       {% include more-help.html %}
     </div>
   </div>
 </div>
+
+
 
