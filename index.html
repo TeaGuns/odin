@@ -9,7 +9,7 @@ title: Home
       <div class="container grid-xl">
         <div class="columns negative-m-s">
           <div class="column col-12 text-center">
-            <h6 class="text-secondary">Select a Category</h6>
+            <h6 class="text-secondary">Tell us </h6>
           </div>
           {% for category in site.data.category_list %}
           {% capture category_name %}{{ category | first }}{% endcapture %}
@@ -19,7 +19,7 @@ title: Home
               <div class="card card-link">
                 <div class="card-body text-center my-4">
                   <h5 class="text-bold">{{ page_category.name }}</h5>
-                      
+
                   {% if category[1].size == 1 %}
                   <p class="m-0">{{ category | last | size }} article</p>
                   {% else %}
@@ -29,7 +29,7 @@ title: Home
               </div>
             </a>
           </div>
-          {% endfor %} 
+          {% endfor %}
 
           {% include more-help.html %}
         </div>

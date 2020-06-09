@@ -1,12 +1,11 @@
 #This file defines all the categories you are using
 
-
-using-subcategories:
-  name: Using Subcategories
+consulting:
+  name: Consulting
   description: Learn to use subcategories!
-using-odin:
-  name: Using Odin
+solutions:
+  name: Solutions
   description: Welcome to Odin, time to get started
-customizing-odin:
-  name: Customizing Odin
+r&d:
+  name: R&D
   description: Welcome to Odin, time to get started
