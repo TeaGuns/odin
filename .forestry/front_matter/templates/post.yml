@@ -1,4 +1,25 @@
 ---
 label: Post
 hide_body: false
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+  description: Name of the Post
+- name: date
+  type: datetime
+  description: Date of Publishing
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+  label: Date
+- name: image
+  type: file
+  config:
+    maxSize: 64
+  label: image
+  description: Images included in the post
