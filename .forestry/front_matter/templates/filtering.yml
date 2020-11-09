@@ -9,8 +9,8 @@ fields:
   name: category
   label: category
 - type: text
-  name: subcategory
-  label: subcategory
-- type: text
   name: title
   label: title
+- type: text
+  name: subcategory
+  label: subcategory
