@@ -9,7 +9,7 @@ subcategory: Tailoring the Report for you needs
 
 ##### What is Filtering?
 
-This is the process of choosing a smaller part of your data set and using that subset of the data for analysis & viewing. 
+This is the process of choosing a smaller part of your data set and using that subset of the data for analysis & viewing.
 
 **_Example_**: Filtering the report to only show one Unit from the hospital. (Filtering is temporary, the complete data set is kept, but it is just hidden)
 
@@ -23,4 +23,6 @@ Filtering data makes the report easier for you the user to read and understand. 
 
 Self Service Reports have buttons and dropdowns on every page. When these buttons or dropdowns are used, the report is ‘filtered’ to your needs**_._**
 
-**_Example:  _**On the home page there are buttons to filter the Month/Year and the Hospital/Units. Clicking on any of these will ‘**filter**’ the report
+**_Example_**: On the home page there are buttons to filter the Month/Year and the Hospital/Units. Clicking on any of these will ‘**filter**’ the report
+
+![Clicking on any of the buttons on this page will filter the report](/uploads/home_meal.jpg "Example of filters")
