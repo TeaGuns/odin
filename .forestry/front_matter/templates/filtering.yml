@@ -15,4 +15,5 @@ fields:
   name: subcategory
   label: subcategory
 pages:
+- _posts/filtering.md
 - filtering.md
