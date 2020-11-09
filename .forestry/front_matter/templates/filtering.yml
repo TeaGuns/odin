@@ -15,5 +15,5 @@ fields:
   name: subcategory
   label: subcategory
 pages:
-- _posts/filtering.md
+- _posts/2020-11-09-filtering.md
 - filtering.md
