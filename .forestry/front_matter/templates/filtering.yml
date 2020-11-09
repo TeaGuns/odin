@@ -1,0 +1,16 @@
+---
+label: Filtering
+hide_body: true
+fields:
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: category
+  label: category
+- type: text
+  name: subcategory
+  label: subcategory
+- type: text
+  name: title
+  label: title
